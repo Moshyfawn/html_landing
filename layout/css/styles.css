@@ -1,0 +1,229 @@
+/* can use plane "header" name because there's only one "header" type container */
+/* "cover" - resize to page */
+/* MARGIN and PADDING can have 4 props: 1 2 3 4. Clock-wise: top, right, bottom, left */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #222222;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both; 
+}
+
+div {
+    box-sizing: border-box;
+}
+
+header {
+    background: url(../img/first-bg.jpg) no-repeat center top / cover;
+    padding-bottom: 160px;
+}
+
+.container {
+    width: 930px;
+    margin: 0 auto;  /* horizontal align center */
+}
+
+.logo {
+    margin-top: 41px;
+    float: left;
+}
+
+nav {
+    float: right;
+    margin-top: 45px;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.menu li {
+    float: left;
+    display: block;
+    margin-right: 41px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.titles_first {
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 180px;
+}
+
+h1 {
+    font-size: 75px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin: 15px;
+}
+
+.button {
+    background: #fed136;
+    color: #484543;
+    border-radius: 3px;
+    display: block;
+    width: 240px;
+    padding: 20px 0px;
+    margin: 0px auto;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 50px;
+
+}
+
+.title {
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.title p {
+    font-size: 16px;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.services {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.services_item {
+    width: 270px;
+    float: left;
+}
+
+.services_item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.services_item p {
+    color:  #777777;
+    font-size: 14px;
+    margin-top: 0px;
+    line-height: 1.5em;
+}
+
+.services_item:last-child {
+    float: right;
+}
+
+.services_item:nth-child(2) {
+    margin-left: 60px;
+}
+
+.works img {
+    margin-top: 50px;
+    float: left;
+}
+
+.works img:last-child {
+    float: right;
+}
+
+.works img:nth-child(2) {
+    margin-left: 29px;
+}
+
+footer {
+    text-align: center;
+    color:  #777777;
+    font-size: 14px;
+    margin: 150px 0px;
+}
+
+#services {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+#portfolio {
+    background: #f7f7f7;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#about {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.info {
+    padding: 50px;
+}
+
+.info_text_left {
+    padding-top: 30px;
+    padding-right: 15px;
+    float: left;
+    font-weight: bold;
+    width: 300px;
+    text-align: right;
+}
+
+.info_text_right {
+    padding-top: 30px;
+    padding-left: 15px;
+    float: right;
+    font-weight: bold;
+    width: 300px;
+    text-align: left;
+}
+
+.info h4 {
+    text-transform: uppercase;
+    padding: 7px;
+    margin: 0px;
+}
+
+.info .description {
+    padding-bottom: 15px;
+    margin: 0px;
+}
+
+.info p {
+    font-weight: normal;
+    color: #777777;
+    padding: 0px;
+    margin: 0px;
+}
+
+.img_left {
+    float: left;
+    margin-left: 25px;
+}
+
+.img_right {
+    float: right;
+    margin-right: 25px;
+}
